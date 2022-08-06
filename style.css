@@ -1,0 +1,82 @@
+html,
+body {
+  margin: 0;
+  background: #ecccb2;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.header {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+.game {
+  display: flex;
+}
+.player-side {
+  margin-top: 100px;
+  width: 50vh;
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cpu-side {
+  width: 50vh;
+  width: 50%;
+  height: 50vh;
+  margin-top: 100px;
+}
+.select {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+  height: 400px;
+  align-items: center;
+  justify-content: space-between;
+}
+.click-to-select {
+  margin-left: 100px;
+  font-size: 36px;
+  font-weight: bold;
+}
+input[type="image"] {
+  width: 100px;
+  height: 100px;
+}
+.cpu-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hidden-choice {
+  max-height: 300px;
+  max-width: 300px;
+}
+img {
+  max-width: 300px;
+  max-height: 300px;
+}
+.cpu-pick {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+input:hover {
+  background-color: #ac7088;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+  border-radius: 10px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
