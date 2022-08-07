@@ -1,3 +1,4 @@
+const paperChoice = 
 const game = () => {
   let playerScore = 0;
   let cpuScore = 0;
