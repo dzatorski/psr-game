@@ -8,8 +8,10 @@ const showPoints = () => {
   pointsCounter.textContent = `${points[0]} : ${points[1]}`;
   if (points[0] > 4) {
     pointsCounter.textContent = `You won ${points[0]} : ${points[1]}`;
+    document.body.style.background = `green`;
   } else if (points[1] > 4) {
     pointsCounter.textContent = `You lost ${points[0]} : ${points[1]}`;
+    document.body.style.background = `red`;
   }
 };
 
@@ -67,7 +69,7 @@ const gamePlay = () => {
       showPoints();
       showCpuChoice();
     }
-  } else result.textContent = `Game ended`;
+  } else result.textContent = `Game ended, reset to play again`;
 };
 
 let playerChoice = ``;
@@ -88,3 +90,7 @@ playerChoiceScissors.addEventListener(`click`, () => {
   playerChoice = `scissors`;
   gamePlay();
 });
+
+const resetGame = () => {
+  points = [0, 0];
+};

@@ -1,5 +1,6 @@
 html,
 body {
+  height: 100vh;
   margin: 0;
   background: #ecccb2;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
