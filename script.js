@@ -8,10 +8,10 @@ const showPoints = () => {
   pointsCounter.textContent = `${points[0]} : ${points[1]}`;
   if (points[0] > 4) {
     pointsCounter.textContent = `You won ${points[0]} : ${points[1]}`;
-    document.body.style.background = `green`;
+    document.body.classList.add(`win`);
   } else if (points[1] > 4) {
     pointsCounter.textContent = `You lost ${points[0]} : ${points[1]}`;
-    document.body.style.background = `red`;
+    document.body.classList.add(`lost`);
   }
 };
 

@@ -85,3 +85,9 @@ input:hover {
   display: flex;
   align-items: center;
 }
+.win {
+  background: lightgreen;
+}
+.lost {
+  background: lightcoral;
+}
