@@ -1,4 +1,4 @@
-const paperChoice = 
+/*
 const game = () => {
   let playerScore = 0;
   let cpuScore = 0;
@@ -23,7 +23,7 @@ const game = () => {
     } else if (cpuChoice === `scissors` && player === `rock`) {
       playerScore++;
     }
-  }
+  } 
   if (playerScore > cpuScore) {
     console.log(`You won ${playerScore} to ${cpuScore}`);
   } else if (playerScore === cpuScore) {
@@ -33,3 +33,4 @@ const game = () => {
   }
 };
 game();
+*/
