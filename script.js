@@ -17,9 +17,11 @@ const showPoints = () => {
 const resetGame = () => {
   points = [0, 0];
   document.getElementsByClassName(`won-lose`).textContent = `Game not started`;
-  document.body.background = `#ecccb2`;
+  document.body.classList.remove(`win`);
+  document.body.classList.remove(`lost`);
   pointsCounter.textContent = `${points[0]} : ${points[1]}`;
   document.getElementById(`cpu`).src = "./images/question-mark.png";
+  result.textContent = `New game`;
 };
 const showCpuChoice = () => {
   if (cpuChoice === `rock`) {
