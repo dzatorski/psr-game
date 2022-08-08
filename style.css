@@ -62,7 +62,7 @@ img {
   margin-top: 30px;
 }
 input:hover {
-  background-color: #ac7088;
+  background-color: #ecccb2;
   -webkit-transition: background-color 1000ms linear;
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
