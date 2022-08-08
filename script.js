@@ -14,7 +14,9 @@ const showPoints = () => {
     document.body.classList.add(`lost`);
   }
 };
-
+const resetGame = () => {
+  points = [0, 0];
+};
 const showCpuChoice = () => {
   if (cpuChoice === `rock`) {
     document.getElementById(`cpu`).src = "./images/fist.png";
@@ -26,7 +28,6 @@ const showCpuChoice = () => {
 };
 const gamePlay = () => {
   cpuChoice = gameArray[Math.floor(Math.random() * gameArray.length)];
-  console.log(cpuChoice);
   if (points[0] < 5 && points[1] < 5) {
     if (playerChoice === `rock` && cpuChoice === `rock`) {
       result.textContent = `It's a draw`;
@@ -90,7 +91,3 @@ playerChoiceScissors.addEventListener(`click`, () => {
   playerChoice = `scissors`;
   gamePlay();
 });
-
-const resetGame = () => {
-  points = [0, 0];
-};
