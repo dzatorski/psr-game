@@ -1,6 +1,7 @@
 const result = document.querySelector(`.won-lose`);
 const pointsCounter = document.querySelector(`.results`);
 const gameArray = [`paper`, `scissors`, `rock`];
+let cpuChoice = ``;
 let points = [0, 0];
 pointsCounter.textContent = `${points[0]} : ${points[1]}`;
 const showPoints = () => {
@@ -22,7 +23,7 @@ const showCpuChoice = () => {
   }
 };
 const gamePlay = () => {
-  let cpuChoice = gameArray[Math.floor(Math.random() * gameArray.length)];
+  cpuChoice = gameArray[Math.floor(Math.random() * gameArray.length)];
   console.log(cpuChoice);
   if (points[0] < 5 && points[1] < 5) {
     if (playerChoice === `rock` && cpuChoice === `rock`) {
