@@ -2,7 +2,7 @@ html,
 body {
   height: 100vh;
   margin: 0;
-  background: #ecccb2;
+  background: whitesmoke;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -90,4 +90,25 @@ input:hover {
 }
 .lost {
   background: lightcoral;
+}
+.reset {
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #ecccb2;
+  border: none;
+  border-radius: 15px;
+}
+.reset:hover {
+  background-color: #79a7f0;
+}
+
+.reset:active {
+  background-color: #3e8e41;
+  transform: translateY(4px);
 }

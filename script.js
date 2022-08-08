@@ -16,6 +16,9 @@ const showPoints = () => {
 };
 const resetGame = () => {
   points = [0, 0];
+  document.getElementsByClassName(`won-lose`).textContent = `Game not started`;
+  document.body.background = `#ecccb2`;
+  pointsCounter.textContent = `${points[0]} : ${points[1]}`;
 };
 const showCpuChoice = () => {
   if (cpuChoice === `rock`) {
@@ -90,4 +93,9 @@ const playerChoiceScissors = document.querySelector(`.scissors`);
 playerChoiceScissors.addEventListener(`click`, () => {
   playerChoice = `scissors`;
   gamePlay();
+});
+
+const resetButton = document.querySelector(`.reset`);
+resetButton.addEventListener(`click`, () => {
+  resetGame();
 });
