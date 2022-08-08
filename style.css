@@ -16,22 +16,14 @@ body {
 .game {
   display: flex;
   justify-content: space-between;
+  margin-top: 150px;
 }
 .player-side {
-  margin-top: 100px;
-  width: 50vh;
-  width: 50%;
-  height: 50vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.cpu-side {
-  width: 50vh;
-  width: 50%;
-  height: 50vh;
-  margin-top: 100px;
-}
+
 .select {
   display: flex;
   flex-direction: column;
@@ -80,6 +72,9 @@ input:hover {
   justify-content: center;
   align-items: center;
   flex: 1;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 50px;
 }
 .select {
   display: flex;
